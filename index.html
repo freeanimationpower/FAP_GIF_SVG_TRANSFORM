@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Transformador GIF / SVG Online</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <style>
+      .site-nav{position:fixed;top:1.5rem;left:50%;transform:translateX(-50%);z-index:1000;
+        display:flex;align-items:center;gap:0.5rem;background:#fff;
+        border:1.5px solid #ede4c0;border-radius:50px;padding:8px 10px 8px 20px;
+        box-shadow:0 2px 20px rgba(7,7,6,0.06),0 0 0 1px rgba(0,0,0,0.02);
+        max-width:calc(100vw - 16px);overflow:hidden}
+      .site-nav img.nav-logo{height:30px;width:auto;flex-shrink:0}
+      .site-nav .nav-divider{width:1px;height:20px;background:#ede4c0;margin:0 4px;flex-shrink:0}
+      .site-nav a{color:#333;text-decoration:none;font-size:0.82rem;font-weight:600;
+        font-family:'Plus Jakarta Sans',sans-serif;padding:8px 14px;border-radius:50px;transition:all .2s;
+        white-space:nowrap;flex-shrink:0}
+      .site-nav a:hover{color:#070706;background:#fff3b3}
+      .site-nav .nav-cta{background:#070706;color:#ffdc00;font-weight:700}
+      .site-nav .nav-cta:hover{background:#1a1a1a;color:#ffdc00}
+      @media(max-width:500px){.site-nav{padding:5px 4px;gap:1px}
+        .site-nav a{font-size:0.6rem;padding:4px 6px}
+        .site-nav img.nav-logo{height:20px}}
+    </style>
+  </head>
+  <body style="padding-top:80px">
+    <nav class="site-nav" id="mainNav">
+      <img src="/assets/img/logoFAP.png" alt="FAP" class="nav-logo">
+      <span class="nav-divider"></span>
+      <a href="/">Inicio</a>
+      <a href="/#tools">Herramientas</a>
+      <a href="/api/logout.php" class="nav-cta">Salir</a>
+    </nav>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
