@@ -1,5 +1,7 @@
 # Transformador GIF / SVG Online
 
+> **Accede directamente**: [freeanimationpower.org/tools/gif-maker/](https://freeanimationpower.org/tools/gif-maker/) — Convierte videos a GIF/SVG sin instalar nada.
+
 Herramienta web 100% cliente para convertir videos cortos a GIF animados o SVG animados. Sin backend, sin subidas a servidor — todo el procesamiento ocurre en el navegador.
 
 ## Funcionalidades
