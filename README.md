@@ -249,6 +249,12 @@ El diseño sigue la identidad **Free Animation Power** (Yellow / Ink Editorial):
 
 ---
 
+## Documentacion Tecnica
+
+- [Informe Tecnico Transformador GIF/SVG](informes_pdf/07_Transformador_GIF_SVG.pdf) — Documento completo de arquitectura, pipeline de conversion video→GIF/SVG, optimizaciones mobile y especificaciones tecnicas.
+
+---
+
 ## Scripts
 
 ```bash
