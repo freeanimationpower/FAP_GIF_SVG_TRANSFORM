@@ -129,18 +129,17 @@ creador-gif/
 
 ```mermaid
 flowchart LR
-%%{init: {'theme': 'base', 'themeVariables': {'primaryColor': '#ffdc00', 'primaryBorderColor': '#1a1a1a', 'primaryTextColor': '#1a1a1a', 'lineColor': '#ff4200', 'fontFamily': 'Segoe UI'}}}%%
     classDef ui fill:#ffdc00,stroke:#1a1a1a,color:#1a1a1a,stroke-width:2px;
     classDef engine fill:#ff4200,stroke:#1a1a1a,color:#ffffff,stroke-width:2px;
     classDef data fill:#1a1a1a,stroke:#ff4200,color:#ffffff,stroke-width:2px;
-    classDef ext fill:#ffffff,stroke:#1a1a1a,color:#1a1a1a,stroke-width:2px,stroke-dasharray:6 3;
-        UP["📥 Subida<br/>MP4 · WebM · MOV ≤ 20 s"] --> DEC["🎞️ Decodificación<br/>frame a frame en cliente"]
-        DEC --> TRM["✂️ Recorte de timeline<br/>in / out preciso"]
-        TRM --> EXT["⚙️ Extracción + optimización<br/>motor de frames robusto"]
-        EXT --> ENC["🧩 Encoder"]
+    classDef ext fill:#ffffff,stroke:#1a1a1a,color:#1a1a1a,stroke-width:2px;
+        UP["Subida<br/>MP4 · WebM · MOV, max 20 s"] --> DEC["Decodificacion<br/>frame a frame en cliente"]
+        DEC --> TRM["Recorte de timeline<br/>in / out preciso"]
+        TRM --> EXT["Extraccion + optimizacion<br/>motor de frames robusto"]
+        EXT --> ENC["Encoder"]
         ENC --> GIF["GIF animado"]
         ENC --> SVG["SVG animado<br/>trazos vectoriales"]
-        GIF --> DL["⬇️ Descarga<br/>stats en tiempo real"]
+        GIF --> DL["Descarga<br/>stats en tiempo real"]
         SVG --> DL
         class UP,TRM ui
         class DEC,EXT,ENC engine
