@@ -6,10 +6,10 @@
 </p>
 
 <p align="center">
-  <img src="docs/screenshot.png" alt="Transformador GIF / SVG Online — convierte videos a GIF animado o SVG" width="860">
+  <img src="docs/screenshot.png" alt="Transformador GIF / SVG Online — convierte vídeos a GIF animado o SVG" width="860">
 </p>
 
-## 🎬 Videos
+## 🎬 Vídeos
 
 📺 Canal oficial: [@freeanimationpower](https://www.youtube.com/@freeanimationpower)
 
@@ -17,17 +17,17 @@
 |---|---|
 | <a href="https://youtu.be/S_pCivQknvQ"><img src="https://i.ytimg.com/vi/S_pCivQknvQ/hqdefault.jpg" width="240"></a> | [Vídeo general: en qué dispositivos funciona Free Animation Power](https://youtu.be/S_pCivQknvQ) |
 
-> **Accede directamente**: [freeanimationpower.org/tools/gif-maker/](https://freeanimationpower.org/tools/gif-maker/) — Convierte videos a GIF/SVG sin instalar nada.
+> **Accede directamente**: [freeanimationpower.org/tools/gif-maker/](https://freeanimationpower.org/tools/gif-maker/) — Convierte vídeos a GIF/SVG sin instalar nada.
 
-Herramienta web 100% cliente para convertir videos cortos a GIF animados o SVG animados. Sin backend, sin subidas a servidor — todo el procesamiento ocurre en el navegador.
+Herramienta web 100% cliente para convertir vídeos cortos a GIF animados o SVG animados. Sin backend, sin subidas a servidor — todo el procesamiento ocurre en el navegador.
 
 ## Funcionalidades
 
-### Subida de video
+### Subida de vídeo
 - **Drag & drop** o click para seleccionar archivo
-- Formatos aceptados: MP4, WebM, MOV y cualquier video soportado por el navegador
+- Formatos aceptados: MP4, WebM, MOV y cualquier vídeo soportado por el navegador
 - Validación automática de duración: **máximo 20 segundos**
-- Detección automática de dimensiones originales del video
+- Detección automática de dimensiones originales del vídeo
 
 ### Recorte de timeline
 - Sliders independientes para **inicio** y **fin** del fragmento a convertir
@@ -39,10 +39,10 @@ Herramienta web 100% cliente para convertir videos cortos a GIF animados o SVG a
 
 | Control | Rango | Descripción |
 |---|---|---|
-| **Ancho / Alto** | 32 – 3840 px | Dimensiones del archivo de salida. Se inicializan automáticamente escaladas desde el video original (máx 960 px en el lado más largo) |
+| **Ancho / Alto** | 32 – 3840 px | Dimensiones del archivo de salida. Se inicializan automáticamente escaladas desde el vídeo original (máx 960 px en el lado más largo) |
 | **Bloqueo de proporción** | On / Off | Al activarlo, cambiar un lado ajusta el otro automáticamente manteniendo el aspect ratio actual |
 | **50%** | — | Reduce ancho y alto a la mitad, respetando el bloqueo de proporción |
-| **Tamaño original** | — | Restaura las dimensiones exactas del video fuente |
+| **Tamaño original** | — | Restaura las dimensiones exactas del vídeo fuente |
 | **FPS** | 1 – 30 | Cuadros por segundo del archivo generado. Determina fluidez vs peso. En móvil, si la combinación genera más de 400 frames, el sistema sugiere 15 FPS automáticamente (el usuario puede subirlo manualmente a 30). |
 | **Calidad** | 5% – 100% | Afecta la compresión y por tanto el peso final del archivo |
 
@@ -73,7 +73,7 @@ Herramienta web 100% cliente para convertir videos cortos a GIF animados o SVG a
 - Botón de descarga directa con nombre `animacion.gif` o `animacion.svg`
 
 ### Diseño responsive
-- **Desktop** (>1024px): layout de 2 columnas (video + editor)
+- **Desktop** (>1024px): layout de 2 columnas (vídeo + editor)
 - **Tablet** (≤1024px): columnas más estrechas, logo reducido
 - **Mobile** (≤600px): columna única apilada, botones ampliados para touch, sliders con touch target ≥36px
 
@@ -89,7 +89,7 @@ Herramienta web 100% cliente para convertir videos cortos a GIF animados o SVG a
 | **Bundler** | Vite 8 |
 | **GIF encoding** | gif.js (Web Workers) |
 | **SVG encoding** | Generación propia (CSS keyframes + imágenes embebidas) |
-| **Procesamiento de video** | APIs nativas del navegador: `<video>` + `<canvas>`, extracción seek-based frame-by-frame (`currentTime` + `seeked`) |
+| **Procesamiento de vídeo** | APIs nativas del navegador: `<video>` + `<canvas>`, extracción seek-based frame-by-frame (`currentTime` + `seeked`) |
 | **Estilos** | CSS puro con variables (`:root` tokens) |
 | **Tipografía** | Outfit (headings) + Plus Jakarta Sans (cuerpo) vía Google Fonts |
 
@@ -133,9 +133,9 @@ flowchart LR
     classDef engine fill:#ff4200,stroke:#1a1a1a,color:#ffffff,stroke-width:2px;
     classDef data fill:#1a1a1a,stroke:#ff4200,color:#ffffff,stroke-width:2px;
     classDef ext fill:#ffffff,stroke:#1a1a1a,color:#1a1a1a,stroke-width:2px;
-        UP["Subida<br/>MP4 · WebM · MOV, max 20 s"] --> DEC["Decodificacion<br/>frame a frame en cliente"]
+        UP["Subida<br/>MP4 · WebM · MOV, max 20 s"] --> DEC["Decodificación<br/>frame a frame en cliente"]
         DEC --> TRM["Recorte de timeline<br/>in / out preciso"]
-        TRM --> EXT["Extraccion + optimizacion<br/>motor de frames robusto"]
+        TRM --> EXT["Extraccion + optimización<br/>motor de frames robusto"]
         EXT --> ENC["Encoder"]
         ENC --> GIF["GIF animado"]
         ENC --> SVG["SVG animado<br/>trazos vectoriales"]
@@ -150,7 +150,7 @@ flowchart LR
 ```
 ┌─────────────────┐
 │  Usuario sube   │
-│  video (≤20s)   │
+│  vídeo (≤20s)   │
 └────────┬────────┘
          ▼
 ┌─────────────────┐
@@ -173,14 +173,14 @@ flowchart LR
 ┌───────────────────────────────────────┐
 │  videoProcessor.ts (Fase 1: 0–50%)    │
 │  ┌──────────────────────────────────┐ │
-│  │ Crea <video> oculto en DOM      │ │
+│  │ Crea <vídeo> oculto en DOM      │ │
 │  │ (iOS requiere árbol DOM)         │ │
 │  │ muted playsinline autoplay       │ │
 │  │ crossOrigin="anonymous"           │ │
 │  │                                  │ │
 │  │ ┌──────────────────────────────┐ │ │
 │  │ │ Frame-by-frame seeking:      │ │ │
-│  │ │ video.currentTime = T        │ │ │
+│  │ │ vídeo.currentTime = T        │ │ │
 │  │ │ await 'seeked' event         │ │ │
 │  │ │ drawImage → canvas           │ │ │
 │  │ │ toDataURL → FrameData        │ │ │
@@ -224,7 +224,7 @@ flowchart LR
 | **Atributos mobile** | `muted`, `playsinline`, `webkit-playsinline`, `autoplay`, `crossOrigin="anonymous"`, `preload="auto"`. Evitan bloqueos del sistema operativo y permiten lectura de píxeles. |
 | **Gestión de memoria (OOM)** | El canvas de captura aplica `calculateCaptureSize()`: si el output supera 960 px en cualquier lado, el canvas interno captura a resolución reducida. El encoder (`gif.js` o `svgEncoder`) hace el upscale al tamaño final con `drawImage(img, 0, 0, w, h)`. |
 | **Yield al hilo principal** | `await new Promise(r => setTimeout(r, 0))` después de cada frame. Permite que React actualice la barra de progreso sin que el navegador arroje "Página no responde". |
-| **Timeout por frame** | 12 segundos por seek. Si `seeked` no se dispara (video corrupto, códec no soportado), la promesa rechaza con mensaje descriptivo del tiempo exacto. |
+| **Timeout por frame** | 12 segundos por seek. Si `seeked` no se dispara (vídeo corrupto, códec no soportado), la promesa rechaza con mensaje descriptivo del tiempo exacto. |
 | **Patrón de promesas** | Flag `settled` + `addEventListener`/`removeEventListener` (nunca `onseeked`). Timeout y listener se limpian mutuamente para evitar memory leaks. |
 | **Limpieza garantizada** | Bloque `finally`: `pause()`, `removeAttribute('src')`, `load()`, `parentNode.removeChild()`, `revokeObjectURL()`. Sin recursos huérfanos. |
 | **Contexto canvas optimizado** | `getContext('2d', { willReadFrequently: true })` para acelerar `toDataURL()` repetido. |
@@ -286,9 +286,9 @@ El diseño sigue la identidad **Free Animation Power** (Yellow / Ink Editorial):
 
 ---
 
-## Documentacion Tecnica
+## Documentacion Técnica
 
-- [Informe Tecnico Transformador GIF/SVG](informes_pdf/07_Transformador_GIF_SVG.pdf) — Documento completo de arquitectura, pipeline de conversion video→GIF/SVG, optimizaciones mobile y especificaciones tecnicas.
+- [Informe Técnico Transformador GIF/SVG](informes_pdf/07_Transformador_GIF_SVG.pdf) — Documento completo de arquitectura, pipeline de conversion vídeo→GIF/SVG, optimizaciones mobile y especificaciones técnicas.
 
 ---
 
