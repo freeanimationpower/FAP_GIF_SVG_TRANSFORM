@@ -1,4 +1,21 @@
 # Transformador GIF / SVG Online
+<p align="center">
+  <a href="https://freeanimationpower.org"><img src="https://img.shields.io/badge/Web_Hub-freeanimationpower.org-ffdc00?style=for-the-badge" alt="Web Hub"></a>
+  <a href="https://www.youtube.com/@freeanimationpower"><img src="https://img.shields.io/badge/YouTube-@freeanimationpower-FF0000?style=for-the-badge&logo=youtube&logoColor=white" alt="YouTube"></a>
+  <a href="https://github.com/freeanimationpower"><img src="https://img.shields.io/badge/GitHub-freeanimationpower-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"></a>
+</p>
+
+<p align="center">
+  <img src="docs/screenshot.png" alt="Transformador GIF / SVG Online — convierte videos a GIF animado o SVG" width="860">
+</p>
+
+## 🎬 Videos
+
+📺 Canal oficial: [@freeanimationpower](https://www.youtube.com/@freeanimationpower)
+
+| Vídeo | Título |
+|---|---|
+| <a href="https://youtu.be/S_pCivQknvQ"><img src="https://i.ytimg.com/vi/S_pCivQknvQ/hqdefault.jpg" width="240"></a> | [Vídeo general: en qué dispositivos funciona Free Animation Power](https://youtu.be/S_pCivQknvQ) |
 
 > **Accede directamente**: [freeanimationpower.org/tools/gif-maker/](https://freeanimationpower.org/tools/gif-maker/) — Convierte videos a GIF/SVG sin instalar nada.
 
